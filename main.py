@@ -1,5 +1,5 @@
 import numpy as np
-
+import time
 # Computer exercise 1
 from matplotlib import pyplot as plt
 
@@ -340,7 +340,7 @@ def exercise10():
         axes[i, 4].set_title('maxLikelihood')
     plt.show()
 
-
+startTime = time.time()
 exercise3()
 print("\n-------------------------------------------------------- \n")
 exercise4()
@@ -358,3 +358,5 @@ print("\n-------------------------------------------------------- \n")
 exercise9Independent()
 print("\n-------------------------------------------------------- \n")
 exercise10()
+
+print(f"Total runtime is = {(time.time()- startTime)} seconds")
